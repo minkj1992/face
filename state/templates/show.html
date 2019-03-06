@@ -1,0 +1,52 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Status Result</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700%7CAllura" rel="stylesheet">
+
+  <link rel="stylesheet" href='{% static "show/css/style.css" %}'>
+</head>
+
+<body>
+  <div id="large-header" class="large-header">
+      <canvas id="demo-canvas" width="640" height="400"></canvas>
+    <div class="container">
+      <div class="chart-demo">
+        <canvas id="radarChart" width="640" height="400"></canvas>
+
+        <ul>
+          <li id="pieChart1" class="chart" value={{ result.0.1 }} data-percent={{ result.0.1 }} ><span>{{ result.0.1 }}</span>{{ result.0.0 }}</li>
+          <li id="pieChart2" class="chart" value={{ result.1.1 }} data-percent={{ result.1.1 }}><span>{{ result.1.1 }}</span>{{ result.1.0 }}</li>
+          <li id="pieChart3" class="chart" value={{ result.2.1 }} data-percent={{ result.2.1 }}><span>{{ result.2.1 }}</span>{{ result.2.0 }}</li>
+          <li id="pieChart4" class="chart" value={{ result.3.1 }} data-percent={{ result.3.1 }}><span>{{ result.3.1 }}</span>{{ result.3.0 }}</li>
+          <li id="pieChart5" class="chart" value={{ result.4.1 }} data-percent={{ result.4.1 }}><span>{{ result.4.1 }}</span>{{ result.4.0 }}</li>
+        </ul>
+      </div>
+    <a href="{% url 'home' %}">Home</a>
+    </div>
+  </div>
+
+  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/392/Chart.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+  <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js'></script>
+  <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js'></script>
+  <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js'></script>
+
+  <script src='{% static "show/js/index.js" %}'></script>
+
+</body>
+
+</html>
+
+
+
+
+

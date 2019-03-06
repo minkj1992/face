@@ -1,0 +1,59 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Photography</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700%7CAllura" rel="stylesheet">
+	
+	<!-- Stylesheets -->
+	<link href='{% static "common-css/ionicons.css" %}' rel="stylesheet">
+	
+	<link href='{% static "common-css/venobox.css" %}' rel="stylesheet">
+	
+	<link href='{% static "03_Portfolio/css/styles.css" %}' rel="stylesheet">
+	
+	<link href='{% static "03_Portfolio/css/responsive.css" %}'  rel="stylesheet">
+	
+</head>
+<body>
+    <header>
+            <a class="logo" href="#"><img src='{% static "images/minwook.png" %}' alt="Logo"></a>
+            
+            <a class="right-area" href="https://github.com/minkj1992/TheTheLab_StatProject">Github</a>
+            
+            <a class="menu-nav-icon" data-menu="#main-menu"><i class="ion-navicon"></i></a>
+            
+            <ul class="main-menu" id="main-menu">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'upload' %}">Upload</a></li>
+                <li><a href="{% url 'picture' %}">Pictures</a></li>
+            </ul>
+    </header>
+	<section class="main-section">
+		<div class="p-grid responsive-img-bg">
+            {% for profile in profiles.all %}
+			<a class="p-item p-item-1 venobox" href="{% url 'show' profile.id %}">
+				<img src="{{ profile.pic.url }}" alt=""/></a>
+            {% endfor %}
+		</div><!-- p-grid -->
+	</section><!-- main-section -->
+     
+	<!-- SCIPTS -->
+	
+	<script src='{% static "common-js/jquery-3.2.1.min.js"%}'></script>
+	
+	<!-- <script src='{% static "common-js/isotope.pkgd.min.js"%}'></script> -->
+	
+	<!-- <script src='{% static "common-js/venobox.min.js"%}'></script> -->
+	
+	<script src='{% static "common-js/scripts.js" %}'></script>
+	
+</body>
+</html>
+
+

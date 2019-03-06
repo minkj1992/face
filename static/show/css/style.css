@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* to remove the top and left whitespace */
+  html, body {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #E7F7F5;
+    font-family: 'Helvetica Neue', 'Arial';
+    font-size: 13px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 1;
+  }
+  
+  /* just to be sure these are full screen*/
+  canvas {
+    display: block;
+  }
+  
+  /* To remove the scrollbars */
+  .container {
+    position: absolute;
+    margin: 0 auto;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  .title {
+    text-align: center;
+    color: #FFA500;
+  }
+  
+  .chart-demo {
+    float: left;
+    max-width: 100%;
+  }
+  
+  /* Header */
+  .large-header {
+    position: relative;
+    width: 100%;
+    background: #333;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+  }
+  
+  #large-header {
+    background-image: url("https://images.pexels.com/photos/933054/pexels-photo-933054.jpeg?cs=srgb&dl=altitude-clouds-cold-933054.jpg&fm=jpg");
+  }
+  
+  /*
+  ======================================================
+    Pie Chart
+  ======================================================
+  */
+  ul {
+    margin-bottom: 1em;
+  }
+  
+  .chart {
+    display: inline-block;
+    width: 95px;
+    height: 95px;
+    margin: 0 10px;
+    vertical-align: top;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 22px;
+  }
+  
+  .chart span {
+    display: block;
+    font-size: 2em;
+    font-weight: normal;
+    line-height:1.2em
+  }
+  
+  .chart canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }

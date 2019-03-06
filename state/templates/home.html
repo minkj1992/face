@@ -1,0 +1,207 @@
+{% load staticfiles %}
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Photography</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	
+	<!-- Font -->
+	
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700%7CAllura" rel="stylesheet">
+	
+	<!-- Stylesheets -->
+	<link href='{% static "common-css/bootstrap.css" %}'  rel="stylesheet">
+	
+	<link href='{% static "common-css/ionicons.css" %}'rel="stylesheet">
+	
+	<!-- REVOLUTION STYLE SHEETS -->
+	<link rel="stylesheet" type="text/css" href='{% static "revolution/css/settings.css" %}'>
+	
+	<!-- REVOLUTION JS FILES -->
+	<script type="text/javascript" src='{% static "revolution/js/jquery.themepunch.tools.min.js" %}'></script>
+	<script type="text/javascript" src='{% static "revolution/js/jquery.themepunch.revolution.min.js" %}'></script>
+		
+	<link href='{% static "01_Photography/css/styles.css" %}' rel="stylesheet">
+	
+	<link href='{% static "01_Photography/css/responsive.css" %}' rel="stylesheet">
+	
+</head>
+<body>
+	
+	<header>
+		<a class="logo" href="#"><img src='{% static "images/minwook.png" %}' alt="Logo"></a>
+		
+		<a class="right-area" href="https://github.com/minkj1992/TheTheLab_StatProject">Github</a>
+		
+		<a class="menu-nav-icon" data-menu="#main-menu"><i class="ion-navicon"></i></a>
+		
+		<ul class="main-menu" id="main-menu">
+			<li><a href="{% url 'home' %}">Home</a></li>
+			<li><a href="{% url 'upload' %}">Upload</a></li>
+			<li><a href="{% url 'picture' %}">Pictures</a></li>
+		</ul>
+	</header>
+	
+	<section class="slider-section">
+	
+		<div id="rev_slider_28_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="parallax-zoom-slices" data-source="gallery" style="background:#000000;padding:0px;">
+		<!-- START REVOLUTION SLIDER 5.4.1 fullscreen mode -->
+			<div id="rev_slider_28_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.1">
+			<ul>
+				<!-- SLIDE 1 -->
+				<li data-index="rs-82" data-transition="fade" data-slotamount="default" 
+					data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeOut"
+					data-easeout="Power4.easeOut" data-masterspeed="1000" data-rotate="0"  
+					data-saveperformance="off"  data-title="Slide" 
+					data-slicey_shadow="0px 0px 50px 0px transparent">
+					<!-- MAIN IMAGE -->
+					<!-- <img src='{% static "images/배경사진.png" %}'  alt=""  data-bgposition="center center" > -->
+					<img src='{% static "images/slider-1-1920x1080.jpg" %}' alt=""  data-bgposition="center center" 
+					
+						data-kenburns="on" data-duration="7000" data-ease="Linear.easeNone" 
+						data-scalestart="80" data-scaleend="120" data-rotatestart="0" data-rotateend="0" 
+						data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" 
+						class="rev-slidebg" data-no-retina>
+						
+					<!-- LAYERS -->
+
+					<!-- LAYER NR. 1 -->
+					<div class="tp-caption tp-resizeme" 
+						data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+						data-y="['middle','middle','middle','middle']" data-voffset="['-53','-53','-53','-33']" 
+						data-fontsize="['80','70','60','50']" data-lineheight="['90','80','70','60']"
+						data-width="none" data-height="none" data-whitespace="nowrap"
+			 
+						data-type="text" data-responsive_offset="on" 
+
+						data-frames='[{"delay":200,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},
+						{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+						data-textAlign="['inherit','inherit','inherit','inherit']"
+						data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+						data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+
+						style="z-index: 14; white-space: nowrap; font-size: 80px; line-height: 90px; font-weight: 600; 
+						color: rgba(255,255,255,100); ">Facial Project</div>
+
+					<!-- LAYER NR. 2 -->
+					<div class="tp-caption tp-resizeme visit-btn" 
+						 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+						 data-y="['middle','middle','middle','middle']" data-voffset="['25','25','25','25']" 
+						data-fontsize="['25','20','20','20']" data-lineheight="['30','25','25','25']"
+						data-width="['none','none','480','360']" data-height="none"
+						data-whitespace="['nowrap','nowrap','normal','normal']"
+			 
+						data-type="text" data-responsive_offset="on" 
+
+						data-frames='[{"delay":400,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},
+						{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},
+						{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255, 255, 255, 100);bc:rgb(255,255,255);bw:0 0 0px 0;"}]'
+						data-textAlign="['inherit','inherit','center','center']"
+						data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+						data-paddingleft="[0,0,0,0]"
+
+						style="z-index: 15; white-space: nowrap; font-size: 25px; line-height: 30px; color: #fff; 
+						border-color:#fff; border-style:solid;border-width:0px 0px 3px 0px;cursor:pointer;
+						letter-spacing: 5px; font-weight: 600; min-width: auto;">너의 얼굴을 평가해줄게</div>
+				
+				</li>
+				
+				<!-- SLIDE 2 -->
+				<li data-index="rs-83" data-transition="fade" data-slotamount="default" data-hideafterloop="0" 
+					data-hideslideonmobile="off"  
+					data-easein="Power4.easeOut" data-easeout="Power4.easeOut" data-masterspeed="1000"  
+					data-rotate="0"  data-saveperformance="off"  
+					data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" 
+					data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" 
+					data-slicey_shadow="0px 0px 50px 0px transparent">
+					
+					<!-- MAIN IMAGE -->
+					<img src='{% static "images/slider-3-1920x1080.jpg" %}'  alt=""  data-bgposition="center center" data-kenburns="on"
+						data-duration="7000" data-ease="Linear.easeNone" data-scalestart="100" 
+						data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
+						data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg"
+						data-no-retina>
+					
+					<!-- LAYERS -->
+
+					<!-- LAYER NR. 1 -->
+					<div class="tp-caption tp-resizeme"  
+						data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+						data-y="['middle','middle','middle','middle']" data-voffset="['-53','-53','-53','-33']" 
+						data-fontsize="['80','70','60','50']" data-lineheight="['90','80','70','60']"
+						data-width="none" data-height="none" data-whitespace="nowrap"
+			 
+						data-type="text" data-responsive_offset="on" 
+
+						data-frames='[{"delay":200,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},
+							{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+						data-textAlign="['inherit','inherit','inherit','inherit']"
+						data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+						data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+
+						style="z-index: 14; white-space: nowrap; font-size: 80px; line-height: 90px; font-weight: 600; 
+						color: rgba(255,255,255,100); ">Your face is</div>
+
+					<!-- LAYER NR. 2 -->
+					<div class="tp-caption tp-resizeme visit-btn" 
+						 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+						 data-y="['middle','middle','middle','middle']" data-voffset="['25','25','25','25']" 
+						data-fontsize="['25','20','20','20']" data-lineheight="['30','25','25','25']"
+						data-width="['none','none','480','360']" data-height="none"
+						data-whitespace="['nowrap','nowrap','normal','normal']"
+			 
+						data-type="text" data-responsive_offset="on" 
+
+						data-frames='[{"delay":400,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},
+							{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},
+							{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255, 255, 255, 100);bc:rgb(255,255,255);bw:0 0 0px 0;"}]'
+						data-textAlign="['inherit','inherit','center','center']"
+						data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+						data-paddingleft="[0,0,0,0]"
+
+						style="z-index: 15; white-space: nowrap; font-size: 25px; line-height: 30px; color: #fff; 
+						border-color:#fff; border-style:solid;border-width:0px 0px 3px 0px;cursor:pointer;
+						letter-spacing: 5px; font-weight: 600; min-width: auto;">so disgusting don't yout think so? </div>
+				
+				</li>
+			</ul>
+			<div class="tp-bannertimer" style="height: 10px; background: rgba(255,255,255,0.25);"></div>	</div>
+		</div><!-- END REVOLUTION SLIDER -->
+		
+	</section><!-- slider -->
+	
+
+	
+	<!-- SCIPTS -->
+	
+	<script src='{% static "common-js/jquery-3.2.1.min.js" %}'></script>
+	
+	<script src='{% static "common-js/tether.min.js" %}'></script>
+	
+	<script src='{% static "common-js/bootstrap.js" %}'></script>
+	
+	<!-- REVOLUTION JS FILES -->
+	<script type="text/javascript" src='{% static "revolution/js/jquery.themepunch.tools.min.js" %}'></script>
+	<script type="text/javascript" src='{% static "revolution/js/jquery.themepunch.revolution.min.js" %}'></script>
+		
+	
+	<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->	
+	<script type="text/javascript" src='{% static "revolution/js/extensions/revolution.extension.actions.min.js" %}'></script>
+	<script type="text/javascript" src='{% static "revolution/js/extensions/revolution.extension.carousel.min.js" %}'></script>
+	<script type="text/javascript" src='{% static "revolution/js/extensions/revolution.extension.kenburn.min.js" %}'></script>
+	<script type="text/javascript" src='{% static "revolution/js/extensions/revolution.extension.layeranimation.min.js" %}'></script>
+	<script type="text/javascript" src='{% static "revolution/js/extensions/revolution.extension.migration.min.js" %}'></script>
+	<script type="text/javascript" src='{% static "revolution/js/extensions/revolution.extension.navigation.min.js" %}'></script>
+	<script type="text/javascript" src='{% static "revolution/js/extensions/revolution.extension.parallax.min.js" %}'></script>
+	<script type="text/javascript" src='{% static "revolution/js/extensions/revolution.extension.slideanims.min.js" %}'></script>
+	<script type="text/javascript" src='{% static "revolution/js/extensions/revolution.extension.video.min.js" %}'></script>
+	
+	
+
+	<script src='{% static "common-js/scripts.js" %}'></script>
+	
+</body>
+</html>
